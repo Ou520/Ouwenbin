@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#07E03F</color>
+    <color name="colorPrimaryDark">#00574B</color>
+    <color name="colorAccent">#D81B60</color>
+    <color name="Gray">#C5C0C0</color>
+    <color name="White">#FFFFFF</color>
+    <color name="Blue">#00BFFF</color>
+    <color name="Transparen">#00000000</color>
+    <color name="Pink">#fb7299</color>
+    <color name="Black">#000000</color>
+    <color name="tab_tv_normal">#999999</color>
+    <color name="tab_tv_selected">#F197A5</color>
+    <color name="anc_replace_circle_color">#ff818283</color>
+    <color name="Yellow">#FFFF00</color>
+    <color name="Green">#008000</color>
+    <color name="LightGreen">#90EE90</color>
+    <color name="DarkBlue">#00008B</color>
+    <color name="LightBLue">#ADD8E6</color>
+    <color name="Gold">	#FFD700</color>
+    <color name="Purple">#800080</color>
+    <color name="Olive">#808000</color>
+</resources>

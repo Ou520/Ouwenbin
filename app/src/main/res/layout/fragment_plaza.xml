@@ -1,0 +1,260 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <com.scwang.smartrefresh.layout.SmartRefreshLayout
+        android:id="@+id/refreshLayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <android.support.v4.widget.NestedScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+                <!--列表页-->
+                <LinearLayout
+                    android:orientation="vertical"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+                    <android.support.v7.widget.RecyclerView
+                        android:id="@+id/Plaza_recycler"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"/>
+                    <TextView
+                        android:gravity="center"
+                        android:textSize="22dp"
+                        android:textColor="@color/Pink"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginBottom="10dp"
+                        android:text="发现更多频道 > "
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content" />
+                </LinearLayout>
+                <!--分割线-->
+                <View
+                    android:background="@color/Gray"
+                    android:layout_width="match_parent"
+                    android:layout_height="2dp"/>
+                <!--分类按钮页-->
+                <LinearLayout
+                    android:layout_marginTop="10dp"
+                    android:orientation="vertical"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+                    <!--第一行按钮-->
+                    <LinearLayout
+                        android:orientation="horizontal"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+                        <Button
+                            android:id="@+id/bnt_Banumi"
+                            android:text="番剧"
+                            style="@style/ClassifyBntStyle"
+                            android:drawableTop="@drawable/plaza1" />
+                        <Button
+                            android:id="@+id/bnt_Aimtron"
+                            android:text="国创"
+                            style="@style/ClassifyBntStyle"
+                            android:drawableTop="@drawable/plaza2" />
+                        <Button
+                            android:id="@+id/bnt_VideoHall"
+                            android:text="放映厅"
+                            style="@style/ClassifyBntStyle"
+                            android:drawableTop="@drawable/plaza3" />
+                        <Button
+                            android:id="@+id/bnt_Documentary"
+                            android:text="纪录片"
+                            style="@style/ClassifyBntStyle"
+                            android:drawableTop="@drawable/plaza4" />
+                    </LinearLayout>
+                    <!--第二行按钮-->
+                    <LinearLayout
+                        android:orientation="horizontal"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+                        <Button
+                            android:id="@+id/bnt_Cartoon"
+                            android:text="漫画"
+                            style="@style/ClassifyBntStyle"
+                            android:drawableTop="@drawable/plaza5" />
+                        <Button
+                            android:id="@+id/bnt_SpecialColumn"
+                            android:text="专栏"
+                            style="@style/ClassifyBntStyle"
+                            android:drawableTop="@drawable/plaza6" />
+                        <Button
+                            android:id="@+id/bnt_Live"
+                            android:text="直播"
+                            style="@style/ClassifyBntStyle"
+                            android:drawableTop="@drawable/plaza7" />
+                        <Button
+                            android:id="@+id/bnt_Frequency"
+                            android:text="音频"
+                            style="@style/ClassifyBntStyle"
+                            android:drawableTop="@drawable/plaza8" />
+                    </LinearLayout>
+                    <!--第三行按钮-->
+                    <LinearLayout
+                        android:orientation="horizontal"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+                        <Button
+                            android:id="@+id/bnt_Animation"
+                            android:text="动画"
+                            style="@style/ClassifyBntStyle"
+                            android:drawableTop="@drawable/plaza9" />
+                        <Button
+                            android:id="@+id/bnt_Music"
+                            android:text="音乐"
+                            style="@style/ClassifyBntStyle"
+                            android:drawableTop="@drawable/plaza10" />
+                        <Button
+                            android:id="@+id/bnt_Dance"
+                            android:text="舞蹈"
+                            style="@style/ClassifyBntStyle"
+                            android:drawableTop="@drawable/plaza11" />
+                        <Button
+                            android:id="@+id/bnt_Game"
+                            android:text="游戏"
+                            style="@style/ClassifyBntStyle"
+                            android:drawableTop="@drawable/plaza12" />
+                    </LinearLayout>
+                    <!--第四行按钮-->
+                    <LinearLayout
+                        android:orientation="horizontal"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+                        <Button
+                            android:id="@+id/bnt_Science"
+                            android:text="科技"
+                            style="@style/ClassifyBntStyle"
+                            android:drawableTop="@drawable/plaza13" />
+                        <Button
+                            android:id="@+id/bnt_NumericalCode"
+                            android:text="数码"
+                            style="@style/ClassifyBntStyle"
+                            android:drawableTop="@drawable/plaza14" />
+                        <Button
+                            android:id="@+id/bnt_Life"
+                            android:text="生活"
+                            style="@style/ClassifyBntStyle"
+                            android:drawableTop="@drawable/plaza15" />
+                        <Button
+                            android:id="@+id/bnt_TheDemon"
+                            android:text="鬼畜"
+                            style="@style/ClassifyBntStyle"
+                            android:drawableTop="@drawable/plaza16" />
+                    </LinearLayout>
+                    <!--第五行按钮-->
+                    <LinearLayout
+                        android:orientation="horizontal"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+                        <Button
+                            android:id="@+id/bnt_Fashion"
+                            android:text="时尚"
+                            style="@style/ClassifyBntStyle"
+                            android:drawableTop="@drawable/plaza17" />
+                        <Button
+                            android:id="@+id/bnt_Advertising"
+                            android:text="广告"
+                            style="@style/ClassifyBntStyle"
+                            android:drawableTop="@drawable/plaza18" />
+                        <Button
+                            android:id="@+id/bnt_Recreation"
+                            android:text="娱乐"
+                            style="@style/ClassifyBntStyle"
+                            android:drawableTop="@drawable/plaza19" />
+                        <Button
+                            android:id="@+id/bnt_Television"
+                            android:text="影视"
+                            style="@style/ClassifyBntStyle"
+                            android:drawableTop="@drawable/plaza20" />
+                    </LinearLayout>
+                    <!--第六行按钮-->
+                    <LinearLayout
+                        android:orientation="horizontal"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+                        <Button
+                            android:id="@+id/bnt_Movie"
+                            android:text="电影"
+                            style="@style/ClassifyBntStyle"
+                            android:drawableTop="@drawable/plaza21" />
+                        <Button
+                            android:id="@+id/bnt_Teleplay"
+                            android:text="电视剧"
+                            style="@style/ClassifyBntStyle"
+                            android:drawableTop="@drawable/plaza22" />
+                        <Button
+                            android:id="@+id/bnt_Wuli"
+                            android:text="小视频"
+                            style="@style/ClassifyBntStyle"
+                            android:drawableTop="@drawable/plaza23" />
+                        <Button
+                            android:id="@+id/bnt_PhotoAlbum"
+                            android:text="相簿"
+                            style="@style/ClassifyBntStyle"
+                            android:drawableTop="@drawable/plaza24" />
+                    </LinearLayout>
+                    <!--第七行按钮-->
+                    <LinearLayout
+                        android:orientation="horizontal"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+                        <Button
+                            android:id="@+id/bnt_Vip"
+                            android:text="会员购"
+                            style="@style/ClassifyBntStyle"
+                            android:drawableTop="@drawable/plaza25" />
+                        <Button
+                            android:id="@+id/bnt_TopicCenter"
+                            android:text="话题中心"
+                            style="@style/ClassifyBntStyle"
+                            android:drawableTop="@drawable/plaza26" />
+                        <Button
+                            android:id="@+id/bnt_RankingList"
+                            android:text="全区排行榜"
+                            style="@style/ClassifyBntStyle"
+                            android:drawableTop="@drawable/plaza27" />
+                        <Button
+                            android:id="@+id/bnt_ActivityCenter"
+                            android:text="活动中心"
+                            style="@style/ClassifyBntStyle"
+                            android:drawableTop="@drawable/plaza28" />
+                    </LinearLayout>
+                    <!--第八行按钮-->
+                    <LinearLayout
+                        android:orientation="horizontal"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+                        <Button
+                            android:id="@+id/bnt_SmallDarkRoom"
+                            android:text="小黑屋"
+                            style="@style/ClassifyBntStyle"
+                            android:drawableTop="@drawable/plaza29" />
+                        <Button
+                            android:id="@+id/bnt_PlayCenter"
+                            android:text="游戏中心"
+                            style="@style/ClassifyBntStyle"
+                            android:drawableTop="@drawable/plaza30" />
+                        <Button
+                            android:id="@+id/bnt_GameCompetition"
+                            android:text="游戏赛季"
+                            style="@style/ClassifyBntStyle"
+                            android:drawableTop="@drawable/plaza31" />
+                        <Button
+                            style="@style/ClassifyBntStyle"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent" />
+                    </LinearLayout>
+
+                </LinearLayout>
+            </LinearLayout>
+        </android.support.v4.widget.NestedScrollView>
+    </com.scwang.smartrefresh.layout.SmartRefreshLayout>
+
+</FrameLayout>

@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <array name="chatArray" tools:ignore="MissingDefaultResource">
+        <item>今天天气真好！0</item>
+        <item>今天天气真好！1</item>
+        <item>今天天气真好！2</item>
+        <item>今天天气真好！3</item>
+        <item>今天天气真好！4</item>
+        <item>今天天气真好！5</item>
+        <item>今天天气真好！6</item>
+        <item>今天天气真好！7</item>
+        <item>今天天气真好！8</item>
+        <item>今天天气真好！9</item>
+        <item>今天天气真好！10</item>
+    </array>
+    <array name="Name" tools:ignore="MissingDefaultResource">
+        <item>凉宫春日</item>
+        <item>博丽灵梦</item>
+        <item>亚丝娜</item>
+        <item>小鸟游空</item>
+        <item>战场原黑仪</item>
+        <item>羽川翼</item>
+        <item>千石抚子</item>
+        <item>高坂桐乃</item>
+        <item>柏崎星奈</item>
+        <item>间桐樱</item>
+
+        <item>凉宫春日</item>
+        <item>博丽灵梦</item>
+        <item>亚丝娜</item>
+        <item>小鸟游空</item>
+        <item>战场原黑仪</item>
+        <item>羽川翼</item>
+        <item>千石抚子</item>
+        <item>高坂桐乃</item>
+        <item>柏崎星奈</item>
+        <item>间桐樱</item>
+
+        <item>凉宫春日</item>
+        <item>博丽灵梦</item>
+        <item>亚丝娜</item>
+        <item>小鸟游空</item>
+        <item>战场原黑仪</item>
+        <item>羽川翼</item>
+        <item>千石抚子</item>
+        <item>高坂桐乃</item>
+        <item>柏崎星奈</item>
+        <item>间桐樱</item>
+
+        <item>凉宫春日</item>
+        <item>博丽灵梦</item>
+        <item>亚丝娜</item>
+        <item>小鸟游空</item>
+        <item>战场原黑仪</item>
+        <item>羽川翼</item>
+        <item>千石抚子</item>
+        <item>高坂桐乃</item>
+        <item>柏崎星奈</item>
+        <item>间桐樱</item>
+
+        <item>凉宫春日</item>
+        <item>博丽灵梦</item>
+        <item>亚丝娜</item>
+        <item>小鸟游空</item>
+        <item>战场原黑仪</item>
+        <item>羽川翼</item>
+        <item>千石抚子</item>
+        <item>高坂桐乃</item>
+        <item>柏崎星奈</item>
+        <item>间桐樱</item>
+    </array>
+</resources>

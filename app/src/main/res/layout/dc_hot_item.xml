@@ -1,0 +1,154 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:paddingTop="10dp"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+    <!--头像标题页-->
+    <!--头像标题页-->
+    <LinearLayout
+        android:id="@+id/LL_DcHot"
+        android:orientation="vertical"
+        android:layout_marginBottom="10dp"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        android:background="@drawable/rounded"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+
+    <RelativeLayout
+        android:layout_marginTop="20dp"
+        android:layout_marginBottom="10dp"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <com.shehuan.niv.NiceImageView
+            android:id="@+id/ivDcHotHeadPortrait"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            app:is_circle="true"
+            app:border_color="@color/Pink"
+            app:border_width="2dp"
+            android:src="@drawable/ic_launcher_icon"
+            android:layout_width="60dp"
+            android:layout_height="60dp" />
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10dp"
+            android:layout_toRightOf="@id/ivDcHotHeadPortrait"
+            android:layout_toLeftOf="@+id/rbSubscription"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+            <TextView
+                android:id="@+id/dcHotName"
+                android:layout_weight="1"
+                android:text="用户名：XXXX"
+                android:textSize="15dp"
+                android:gravity="center_vertical"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" />
+            <TextView
+                android:id="@+id/tvSynthesizeTime"
+                android:text="更新时间"
+                android:textSize="14dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+        </LinearLayout>
+        <ToggleButton
+            android:id="@+id/rbSubscription"
+            android:layout_toLeftOf="@+id/bntDcHotMenu"
+            android:layout_centerVertical="true"
+            android:text=" + 订阅"
+            android:textColor="@color/White"
+            android:textSize="15dp"
+            android:textOff="@null"
+            android:textOn="@null"
+            android:padding="10dp"
+            android:background="@color/Transparen"
+            android:layout_width="wrap_content"
+            android:layout_height="40dp" />
+        <Button
+            android:id="@+id/bntDcHotMenu"
+            android:background="@drawable/ic_menu"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="8dp"
+            android:layout_width="30dp"
+            android:layout_height="50dp" />
+    </RelativeLayout>
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_marginBottom="15dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TextView
+            android:id="@+id/tvDcHotContent"
+            android:text="内容区"
+            android:textSize="22dp"
+            android:layout_marginLeft="20dp"
+            android:gravity="center_vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+        <com.shehuan.niv.NiceImageView
+            android:id="@+id/dcHotImage"
+            android:src="@mipmap/item1"
+            app:corner_radius="25dp"
+            android:layout_marginTop="20dp"
+            android:layout_gravity="center"
+            android:layout_width="355dp"
+            android:layout_height="200dp" />
+        <TextView
+            android:id="@+id/tvSynthesizeImageContent"
+            android:text="图片携带的内容区"
+            android:textSize="20dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="20dp"
+            android:gravity="center_vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_marginTop="20dp"
+            android:gravity="center_vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <Button
+                android:id="@+id/bntDcHotShare"
+                android:layout_weight="1"
+                android:text="分享"
+                android:textColor="@color/Pink"
+                android:textSize="15dp"
+                android:drawableLeft="@drawable/ic_share"
+                android:paddingLeft="15dp"
+                style="@style/ClassifyBntStyle"
+                android:layout_width="match_parent"
+                android:layout_height="40dp" />
+            <Button
+                android:id="@+id/bntDcHotMessage"
+                android:layout_weight="1"
+                android:drawableLeft="@drawable/ic_message"
+                android:text="信息"
+                android:textColor="@color/Pink"
+                android:textSize="15dp"
+                android:paddingLeft="15dp"
+                style="@style/ClassifyBntStyle"
+                android:layout_width="match_parent"
+                android:layout_height="40dp" />
+            <ToggleButton
+                android:id="@+id/rbDcHotLike"
+                android:layout_weight="1"
+                android:drawableTop="@drawable/togglebutton_like"
+                android:textColor="@color/Pink"
+                android:textSize="15dp"
+                android:paddingLeft="15dp"
+                android:textOff="@null"
+                android:textOn="@null"
+                android:background="@color/Transparen"
+                android:layout_width="match_parent"
+                android:layout_height="40dp" />
+        </LinearLayout>
+    </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

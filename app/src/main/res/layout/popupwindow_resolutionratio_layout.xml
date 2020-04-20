@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RadioGroup xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:gravity="center|center_horizontal"
+    android:background="#000000"
+    android:paddingLeft="50dp"
+    android:paddingRight="20dp"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <RadioButton
+        android:text="高清·1080P·60"
+        style="@style/style_RadioButton"
+        android:layout_marginTop="20dp"
+        android:layout_width="120dp"
+        android:layout_height="40dp" />
+    <RadioButton
+        android:text="高清·720P·60"
+        style="@style/style_RadioButton"
+        android:layout_marginTop="20dp"
+        android:layout_width="120dp"
+        android:layout_height="40dp" />
+    <RadioButton
+        android:text="高清·1080P"
+        style="@style/style_RadioButton"
+        android:layout_marginTop="20dp"
+        android:layout_width="120dp"
+        android:layout_height="40dp" />
+    <RadioButton
+        android:text="高清·720P"
+        style="@style/style_RadioButton"
+        android:layout_marginTop="20dp"
+        android:layout_width="120dp"
+        android:layout_height="40dp" />
+    <RadioButton
+        android:text="清晰·480P"
+        style="@style/style_RadioButton"
+        android:layout_marginTop="20dp"
+        android:layout_width="120dp"
+        android:layout_height="40dp" />
+    <RadioButton
+        android:text="流畅·360P"
+        style="@style/style_RadioButton"
+        android:layout_marginTop="20dp"
+        android:layout_width="120dp"
+        android:layout_height="40dp" />
+    <RadioButton
+        android:text="自动·（480P）"
+        style="@style/style_RadioButton"
+        android:layout_marginTop="20dp"
+        android:layout_width="120dp"
+        android:layout_height="40dp" />
+</RadioGroup>

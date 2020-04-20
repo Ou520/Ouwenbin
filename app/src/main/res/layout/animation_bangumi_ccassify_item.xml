@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_marginLeft="15dp"
+    android:layout_marginRight="15dp"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+    <TextView
+        android:id="@+id/video_name1"
+        android:text="类型*番剧"
+        android:textSize="22dp"
+        android:textColor="@color/Black"
+        android:gravity="center_vertical"
+        android:layout_marginTop="20dp"
+        android:layout_marginBottom="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <LinearLayout
+            android:layout_weight="1"
+            android:orientation="vertical"
+            android:layout_marginRight="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <com.shehuan.niv.NiceImageView
+                android:id="@+id/CoverFlowAdapter"
+                app:corner_radius="15dp"
+                android:src="@drawable/abc4"
+                android:layout_gravity="center"
+                android:layout_width="105dp"
+                android:layout_height="184dp" />
+            <TextView
+                android:text="番剧名"
+                android:layout_marginLeft="5dp"
+                android:textColor="@color/Black"
+                android:textSize="18dp"
+                android:gravity="center"
+                android:layout_marginTop="8dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+            <TextView
+                android:text="番剧名"
+                android:layout_marginLeft="5dp"
+                android:gravity="center"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_weight="1"
+            android:orientation="vertical"
+            android:layout_marginRight="5dp"
+            android:layout_marginLeft="5dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <com.shehuan.niv.NiceImageView
+                app:corner_radius="15dp"
+                android:src="@drawable/abc3"
+                android:layout_gravity="center"
+                android:layout_width="105dp"
+                android:layout_height="184dp" />
+            <TextView
+                android:text="番剧名"
+                android:layout_marginLeft="5dp"
+                android:textColor="@color/Black"
+                android:textSize="18dp"
+                android:gravity="center"
+                android:layout_marginTop="8dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+            <TextView
+                android:text="番剧名"
+                android:layout_marginLeft="5dp"
+                android:gravity="center"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_weight="1"
+            android:orientation="vertical"
+            android:layout_marginLeft="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <com.shehuan.niv.NiceImageView
+                app:corner_radius="15dp"
+                android:src="@drawable/abc7"
+                android:layout_gravity="center"
+                android:layout_width="105dp"
+                android:layout_height="184dp" />
+            <TextView
+                android:text="番剧名"
+                android:layout_marginLeft="5dp"
+                android:textColor="@color/Black"
+                android:textSize="18dp"
+                android:gravity="center"
+                android:layout_marginTop="8dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+            <TextView
+                android:text="番剧名"
+                android:layout_marginLeft="5dp"
+                android:gravity="center"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+        </LinearLayout>
+    </LinearLayout>
+    <TextView
+        android:text="换一换"
+        android:layout_marginTop="20dp"
+        android:layout_marginBottom="20dp"
+        android:textColor="@color/Pink"
+        android:textSize="18dp"
+        android:gravity="center"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+</LinearLayout>

@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:paddingLeft="10dp"
+    android:paddingRight="10dp"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content">
+    <TextView
+        android:text="敬请期待"
+        android:textColor="@color/Black"
+        android:gravity="center_horizontal"
+        android:layout_marginBottom="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <com.shehuan.niv.NiceImageView
+        android:id="@+id/tv_FanJuMingImg"
+        app:corner_radius="15dp"
+        android:src="@drawable/abc1"
+        android:layout_width="86dp"
+        android:layout_height="150dp" />
+    <TextView
+        android:text="番剧名：XXXX"
+        android:id="@+id/tv_FanJuMing"
+        android:textColor="@color/Black"
+        android:textSize="18dp"
+        android:gravity="center"
+        android:layout_marginTop="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+    <ToggleButton
+        android:id="@+id/tb_Login"
+        android:text="追番"
+        android:layout_gravity="center_horizontal"
+        android:textColor="@color/Pink"
+        android:textSize="20dp"
+        android:textOff="@null"
+        android:textOn="@null"
+        android:background="@color/Transparen"
+        android:drawableLeft="@drawable/togglebutton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+    <!--android:textOff=""//按钮没有被选中时显示的文字-->
+    <!--android:textOn：""//按钮被选中时显示的文字-->
+    <!--android:textOff="@null"按钮没有被选中时没有文字-->
+    <!--android:textOn="@null"按钮被选中时没有文字-->
+</LinearLayout>

@@ -1,0 +1,212 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:myradio="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".controller.activity.MainActivity">
+    <android.support.design.widget.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:theme="@style/AppTheme.AppBarOverlay">
+        <android.support.v7.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:background="@color/Pink"
+            app:layout_scrollFlags="scroll"
+            app:popupTheme="@style/AppTheme.PopupOverlay">
+            <LinearLayout
+                android:orientation="horizontal"
+                android:gravity="center_vertical"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+                 <TextView
+                     android:id="@+id/tvSearch"
+                     android:layout_weight="1"
+                     android:onClick="ivPersonalCenterOnClick"
+                     android:clickable="true"
+                     android:text="搜索"
+                     android:textSize="14sp"
+                     android:textColor="@drawable/tv_search_text_color__selector"
+                     android:background="@drawable/tv_search_bg_selector"
+                     android:drawableLeft="@drawable/tv_search_drawable_selector"
+                     android:layout_marginLeft="8dp"
+                     android:layout_marginTop="8dp"
+                     android:layout_marginBottom="8dp"
+                     android:drawablePadding="10dp"
+                     android:gravity="center_vertical"
+                     android:layout_width="match_parent"
+                     android:layout_height="match_parent" />
+
+                <TextView
+                    android:id="@+id/tvChannel"
+                    android:visibility="gone"
+                    android:text="频道"
+                    android:textColor="@color/White"
+                    android:textSize="30dp"
+                    android:gravity="center"
+                    android:layout_weight="1"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent" />
+                <TextView
+                    android:id="@+id/tvDynamicCondition"
+                    android:visibility="gone"
+                    android:text="动态"
+                    android:textColor="@color/White"
+                    android:textSize="30dp"
+                    android:gravity="center"
+                    android:layout_weight="1"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent" />
+                <TextView
+                    android:visibility="gone"
+                    android:id="@+id/tvPeopleNearby"
+                    android:text="附近的人"
+                    android:textColor="@color/White"
+                    android:textSize="30dp"
+                    android:gravity="right|center_vertical"
+                    android:layout_weight="1"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent" />
+                <RelativeLayout
+                    android:id="@+id/rl_Game"
+                    android:layout_marginLeft="8dp"
+                    android:layout_marginRight="5dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+                    <Button
+                    android:onClick="ivPersonalCenterOnClick"
+                    android:id="@+id/bntGame"
+                    android:background="@drawable/img1"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp" />
+                    <ImageView
+                        android:layout_alignRight="@id/bntGame"
+                        android:background="@drawable/dot"
+                        android:layout_marginTop="1dp"
+                        android:layout_marginRight="1dp"
+                        android:layout_width="6dp"
+                        android:layout_height="6dp" />
+                </RelativeLayout>
+                <RelativeLayout
+                    android:id="@+id/rl_Download"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginRight="5dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+                    <Button
+                        android:id="@+id/bntDownload"
+                        android:background="@drawable/img2"
+                        android:onClick="ivPersonalCenterOnClick"
+                        android:layout_width="30dp"
+                        android:layout_height="30dp" />
+                    <ImageView
+                        android:layout_alignRight="@id/bntDownload"
+                        android:background="@drawable/dot"
+                        android:layout_marginTop="3dp"
+                        android:layout_marginRight="2dp"
+                        android:layout_width="6dp"
+                        android:layout_height="6dp" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/rl_Message"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginRight="5dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+                    <Button
+                        android:id="@+id/bntMessage"
+                        android:background="@drawable/img3"
+                        android:onClick="ivPersonalCenterOnClick"
+                        android:layout_width="30dp"
+                        android:layout_height="30dp" />
+                    <ImageView
+                        android:layout_alignRight="@id/bntMessage"
+                        android:background="@drawable/dot"
+                        android:layout_width="6dp"
+                        android:layout_height="6dp" />
+            </RelativeLayout>
+
+                <Button
+                    android:id="@+id/bntSearch1"
+                    android:background="@drawable/img4"
+                    android:onClick="ivPersonalCenterOnClick"
+                    android:visibility="gone"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginRight="5dp"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp" />
+                <Button
+                    android:id="@+id/bntCompile"
+                    android:background="@drawable/img5"
+                    android:onClick="ivPersonalCenterOnClick"
+                    android:visibility="gone"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginRight="5dp"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp" />
+
+            </LinearLayout>
+        </android.support.v7.widget.Toolbar>
+        <!-- layout_scrollFlags设置Toolbar的隐藏样式，如果使用Toolbar并想让他隐藏一定要设置layout_scrollFlags-->
+    </android.support.design.widget.AppBarLayout>
+
+
+    <FrameLayout
+        android:id="@+id/fl_content"
+        myradio:layout_behavior="@string/appbar_scrolling_view_behavior"
+        android:layout_above="@id/bottom"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+    <!--  myradio:layout_behavior="@string/appbar_scrolling_view_behavior"的作用：防止FrameLayout的一部分被AppBarLayout遮挡-->
+
+    <LinearLayout
+        android:id="@+id/bottom"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom"
+        android:background="@color/White"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        myradio:layout_behavior=".utils.BottomViewBehavior">
+
+        <RadioGroup
+            android:id="@+id/rg_main"
+            android:background="@android:color/white"
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <com.example.myapplication.ouwenbin.utils.view.MyRadioButton
+                android:id="@+id/rb1"
+                android:text="首页"
+                style="@style/MainRadioButtonStyle"
+                myradio:drawableSize="25dp"
+                myradio:drawableTop="@drawable/tab_shouye_selector" />
+            <com.example.myapplication.ouwenbin.utils.view.MyRadioButton
+                android:id="@+id/rb2"
+                android:text="频道"
+                style="@style/MainRadioButtonStyle"
+                myradio:drawableSize="25dp"
+                myradio:drawableTop="@drawable/tab_pindao_selector" />
+            <com.example.myapplication.ouwenbin.utils.view.MyRadioButton
+                android:id="@+id/rb3"
+                android:text="动态"
+                style="@style/MainRadioButtonStyle"
+                myradio:drawableSize="25dp"
+                myradio:drawableTop="@drawable/tab_dotai_selector" />
+            <com.example.myapplication.ouwenbin.utils.view.MyRadioButton
+                android:id="@+id/rb4"
+                android:text="附近的人"
+                style="@style/MainRadioButtonStyle"
+                myradio:drawableSize="25dp"
+                myradio:drawableTop="@drawable/tab_fujinderen_selector" />
+        </RadioGroup>
+
+    </LinearLayout>
+
+
+</android.support.design.widget.CoordinatorLayout>

@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:background="@color/Pink"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".controller.activity.LoginActivity">
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="left">
+        <Button
+            android:id="@+id/bntLogin4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:onClick="bntLoginReturnClick"
+            android:text="返回" />
+    </LinearLayout>
+
+    <ImageView
+        android:src="@drawable/ic_launcher_icon"
+        android:layout_width="match_parent"
+        android:layout_height="120dp" />
+
+    <LinearLayout
+        android:layout_marginTop="50dp"
+        android:layout_marginRight="10dp"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical|center_horizontal">
+        <ImageView
+            android:src="@drawable/username"
+            android:layout_width="64dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="10dp"
+            android:layout_height="48dp" />
+        <EditText
+            android:id="@+id/etLogin1"
+            android:hint="请输入用户名"
+            android:gravity="center"
+            android:background="@drawable/rounded"
+            android:layout_marginRight="50dp"
+            android:layout_width="match_parent"
+            android:layout_weight="1"
+            android:layout_height="48dp" />
+    </LinearLayout>
+    <LinearLayout
+        android:layout_marginTop="20dp"
+        android:layout_marginRight="10dp"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical|center_horizontal">
+        <ImageView
+            android:src="@drawable/password"
+            android:layout_width="64dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="10dp"
+            android:layout_height="48dp" />
+
+        <EditText
+            android:id="@+id/etLogin2"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:layout_weight="1"
+            android:hint="请输入密码"
+            android:gravity="center"
+            android:background="@drawable/rounded"
+            android:inputType="textPassword" />
+        <ToggleButton
+            android:id="@+id/tb_Login"
+            android:layout_width="50dp"
+            android:textOff="@null"
+            android:textOn="@null"
+            android:background="@drawable/togglebutton"
+            android:layout_height="wrap_content" />
+        <!--android:textOff=""//按钮没有被选中时显示的文字-->
+        <!--android:textOn：""//按钮被选中时显示的文字-->
+        <!--android:textOff="@null"按钮没有被选中时没有文字-->
+        <!--android:textOn="@null"按钮被选中时没有文字-->
+    </LinearLayout>
+    <LinearLayout
+        android:layout_marginTop="30dp"
+        android:layout_marginRight="60dp"
+        android:layout_marginLeft="60dp"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical|center_horizontal">
+        <Button
+            android:id="@+id/bntLogin1"
+            android:text="登录"
+            android:onClick="bntLoginOnClick"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"/>
+    </LinearLayout>
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical|center_horizontal">
+        <Button
+            android:id="@+id/bntLogin2"
+            android:text="忘记密码？"
+            android:background="@color/Transparen"
+            android:layout_marginLeft="10dp"
+            android:gravity="center"
+            android:layout_marginRight="100dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"/>
+        <Button
+            android:id="@+id/bntLogin3"
+            android:text="新用户注册"
+            android:background="@color/Transparen"
+            android:layout_marginLeft="100dp"
+            android:gravity="center"
+            android:onClick="bntLoginRegOnClick"
+            android:layout_marginRight="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"/>
+    </LinearLayout>
+</LinearLayout>

@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_homePage"
+            android:icon="@drawable/ic_menu_homepage"
+            android:title="首页" />
+        <item
+            android:id="@+id/nav_Record"
+            android:icon="@drawable/ic_menu_record"
+            android:title="历史记录" />
+        <item
+            android:id="@+id/nav_Download"
+            android:icon="@drawable/ic_menu_download"
+            android:title="离线下载" />
+        <item
+            android:id="@+id/nav_Collect"
+            android:icon="@drawable/ic_menu_collect"
+            android:title="我的收藏" />
+        <item
+            android:id="@+id/nav_look"
+            android:icon="@drawable/ic_menu_look"
+            android:title="稍后再看" />
+    </group>
+
+    <item android:title="加入我们">
+        <menu>
+            <item
+                android:id="@+id/nav_Contribute"
+                android:icon="@drawable/ic_menu_contribute"
+                android:title="投稿" />
+            <item
+                android:id="@+id/nav_Creation"
+                android:icon="@drawable/ic_menu_creation"
+                android:title="创作中心" />
+            <item
+                android:id="@+id/nav_PopularActivities"
+                android:icon="@drawable/ic_menu_popularactivities"
+                android:title="热门活动" />
+        </menu>
+    </item>
+
+    <item android:title="我们的服务">
+        <menu>
+            <item
+                android:id="@+id/nav_Live"
+                android:icon="@drawable/ic_menu_live"
+                android:title="直播中心" />
+            <item
+                android:id="@+id/nav_freeFlow"
+                android:icon="@drawable/ic_menu_freeflow"
+                android:title="免流量服务" />
+            <item
+                android:id="@+id/nav_orderForm"
+                android:icon="@drawable/ic_menu_orderform"
+                android:title="我的订单" />
+            <item
+                android:id="@+id/nav_Member"
+                android:icon="@drawable/ic_menu_member"
+                android:title="会员中心" />
+            <item
+                android:id="@+id/nav_customerService"
+                android:icon="@drawable/ic_menu_customerservice"
+                android:title="联系客服" />
+        </menu>
+    </item>
+
+
+
+</menu>
