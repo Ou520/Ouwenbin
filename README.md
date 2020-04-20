@@ -1,32 +1,37 @@
 # Ouwenbin
-仿照哔哩哔哩动画安卓客户端的项目
+###仿照哔哩哔哩动画安卓客户端的项目
 #使用的开源框架：
+
     implementation 'com.google.code.gson:gson:2.8.5'
     implementation 'com.squareup.okhttp3:okhttp:3.10.0'
     implementation 'pub.devrel:easypermissions:0.3.0'
     implementation 'org.jetbrains:annotations-java5:15.0'
     implementation 'com.android.support:design:28.0.0'
+    
     //B站媒体播放器
     implementation 'tv.danmaku.ijk.media:ijkplayer-java:0.8.8'
     implementation 'tv.danmaku.ijk.media:ijkplayer-armv7a:0.8.8'
     implementation 'tv.danmaku.ijk.media:ijkplayer-exo:0.8.8'
     implementation 'tv.danmaku.ijk.media:ijkplayer-armv5:0.8.8'
+    
     //图片轮播
     implementation 'com.youth.banner:banner:1.4.10'
     //noinspection GradleDependency
     implementation 'com.github.bumptech.glide:glide:3.7.0'
+    
     // ButterKnife所需要的依赖
     implementation 'com.jakewharton:butterknife:8.8.1'
     annotationProcessor 'com.jakewharton:butterknife-compiler:8.8.1'
+    
     //万能播放器的库（Vitamio）
     implementation project(':vitamio')
+    
     //Android 圆角、圆形 ImageView的库
     implementation 'com.github.SheHuan:NiceImageView:1.0.5'
+    
     //Xutils:JSON和图片解析框架
     implementation 'org.xutils:xutils:3.8.3'
-    //    //Glide图片加载框架（可以加载.gif图）
-    //    implementation 'com.github.bumptech.glide:glide:4.10.0'
-    //    annotationProcessor 'com.github.bumptech.glide:compiler:4.10.0'
+
     //Picasso图片加载框架(最新版)
     implementation 'com.squareup.picasso:picasso:2.71828'
     implementation files('libs/classes.jar')
